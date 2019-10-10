@@ -9,14 +9,15 @@ import (
 )
 
 func main() {
-  router := gin.Default()
+  gin.SetMode(gin.ReleaseMode)
+  router := gin.New()
 
   router.GET("/:n", func(c *gin.Context) {
     n, _ := strconv.ParseUint(c.Param("n"), 10, 64)
     //log.Println("Err: ", err)
     res := fact(n)
     //message := fmt.Sprintf("Factorial of %d is %d", n, res)
-    //log.Println("M: ", message)
+    //log.Println("M: ",message)
     c.String(http.StatusOK, string(res))
   })
 
