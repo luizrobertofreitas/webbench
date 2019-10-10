@@ -41,26 +41,26 @@ $ wrk -c100 -t10 -d30s -T1s http://localhost:8090/65
 
 * Go+Gin
 ```
-Running 30s test @ http://localhost:8091/65
+Running 10s test @ http://localhost:8091/65
   10 threads and 100 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.79ms    5.61ms  76.52ms   85.10%
-    Req/Sec     3.11k   573.88     6.59k    69.63%
-  930920 requests in 30.07s, 105.65MB read
-Requests/sec:  30954.22
-Transfer/sec:      3.51MB
+    Latency     0.92ms    1.10ms  20.89ms   89.43%
+    Req/Sec    13.81k     3.44k   21.08k    64.60%
+  1377075 requests in 10.04s, 156.28MB read
+Requests/sec: 137183.40
+Transfer/sec:     15.57MB
 ```
 
 * Python+Japronto
 ```
-Running 30s test @ http://localhost:8090/65
+Running 10s test @ http://localhost:8090/65
   10 threads and 100 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     5.49ms    1.89ms  20.20ms   79.08%
-    Req/Sec     1.83k   337.26    15.61k    87.50%
-  547649 requests in 30.10s, 89.31MB read
-Requests/sec:  18196.82
-Transfer/sec:      2.97MB
+    Latency     2.24ms    1.14ms  21.18ms   89.82%
+    Req/Sec     4.67k     1.26k    5.79k    75.50%
+  466592 requests in 10.09s, 76.09MB read
+Requests/sec:  46220.64
+Transfer/sec:      7.54MB
 ```
 
 ### Thanks!
