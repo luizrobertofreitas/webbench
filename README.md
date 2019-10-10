@@ -1,6 +1,6 @@
 # Benchmark for fun
 
-The purpose of this benchmark is compare 2 language+frameworks: `Go+Gin and Python+Japronto`
+The purpose of this benchmark is compare the Request per seconds of 2 language+frameworks: `Go+Gin` and `Python+Japronto`
 
 ### Techs
 * Go language + Gin https://github.com/gin-gonic/gin 
